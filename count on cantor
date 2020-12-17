@@ -1,0 +1,13 @@
+# cook your dish here
+from math import sqrt, ceil 
+for i in range(int(input())):
+    n=int(input())
+    c=ceil((sqrt(8*n+1)-1)/2)
+    t= n - c*(c-1)/2
+    if(c%2==0):
+        print('TERM %d IS %d/%d'%(n, t, c-t+1))
+    if(c%2>0):
+        print('TERM %d IS %d/%d'%(n, c-t+1, t))
+    
+        
+        
